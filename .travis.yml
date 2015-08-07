@@ -2,4 +2,6 @@ language: objective-c
 osx_image: xcode7
 xcode_project: Jumblify/Jumblify.xcodeproj # path to your xcodeproj folder
 xcode_scheme: JumblifyTests
-xcode_sdk: iphonesimulator
+#xcode_sdk: iphonesimulator
+
+script: xctool -project Jumblify/Jumblify.xcodeproj -scheme JumblifyTests -sdk iphonesimulator test -parallelize -logicTestBucketSize 20 ONLY_ACTIVE_ARCH=NO TESTING=1
