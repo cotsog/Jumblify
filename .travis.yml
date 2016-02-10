@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode7.2
-xcode_project: Jumblify.xcodeproj # path to your xcodeproj folder
+xcode_workspace: Jumblify.xcworkspace
 xcode_scheme: JumblifyTests
 xcode_sdk: iphonesimulator
 
